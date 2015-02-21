@@ -1,0 +1,110 @@
+@import "Museo300";
+@import "Museo500";
+
+$body-font-family: 'Museo 300', sans-serif;
+$body-font-weight: 300;
+$body-font-color: white;
+$base-font-size: 18px;
+$rem-base: $base-font-size;
+
+@import "normalize";
+@import "foundation/components/grid";
+@import "foundation/components/forms";
+
+$jar-green: #34a587;
+$jar-light-green: #19ffc2;
+$dark-gray: #2b2b2b;
+
+body {
+  background-color: $jar-green;
+}
+
+header {
+  h1 {
+    padding-top: rem-calc(120);
+    padding-bottom: rem-calc(90);
+    color: #ffffff;
+    font-family: 'Museo 500', serif;
+    font-weight: 300;
+    .top {
+      font-size: rem-calc(90);
+    }
+    .bottom {
+      font-size: rem-calc(78);
+      .line {
+        $border-width: rem-calc(4);
+        border: solid;
+        border-width: 0 0 $border-width 0;
+        width: rem-calc(236);
+      }
+    }
+  }
+}
+
+form {
+  position: relative;
+  input[type='text'], input[type='email'] {
+    font-size: rem-calc(18);
+  }
+  input {
+    text-align: center;
+    font-size: rem-calc(18);
+  }
+  button {
+    width: 100%;
+    background-color: $jar-light-green;
+    color: $dark-gray;
+  }
+  button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #08523E;
+  }
+}
+
+#loading {
+  @extend .hiddenable;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -0.5rem;
+  background: rgba($jar-green, 0.9);
+  z-index: 98;
+}
+
+#thanks {
+  @extend .hiddenable;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  span {
+    padding: 0.5rem;
+    line-height: 4rem;
+    text-align: center;
+    color: $dark-gray;
+  }
+}
+
+.hiddenable {
+  -webkit-transition: all 600ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  -moz-transition: all 600ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  -o-transition: all 600ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  transition: all 600ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+
+  -webkit-transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  -moz-transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  -o-transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+section.form {
+  padding: 3rem 0 0 0;
+}

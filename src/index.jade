@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        title Name The Jar
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='static/style.css')
+    body
+        header
+            .row
+                .small-9.columns
+                    h1
+                        .top name
+                        .bottom the jar
+                            .line
+        section.jar
+            img(src='static/jar-full-resolution.jpg')
+        section.form
+            .row
+                .small-10.small-centered.columns
+                    form
+                        #loading.hidden
+                        #thanks.hidden
+                            span Thank you for sending the name!
+                            button send one more
+
+                        input(type='text' name='entry.1339169255' placeholder='name the jar' required=true)
+                        input(type='email' name='entry.770624702' placeholder='your e-mail')
+                        button(value='Submit') send
+        section.description
+            .row
+                .small-12.columns
+                    h2 But what's about?
+                    p Warsjawa is changing its name. Help us choosing right name and you can win greate prize!
+
+                    h2 Why do we want to find a new name for a Jar?
+                    p Warsjawa is growing and we want to bring best speakers not only from JVM world. We aim to get Python, Ruby, JavaScript, iOS, Android and many more on our board!
+
+
+                    h2 I want to become a sponsor this year!
+                    p Thank you for help! Please check this document for current sponsor offer.
+
+        script(src='static/script.js' defer)
+
