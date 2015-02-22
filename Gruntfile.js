@@ -27,6 +27,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/foundation/js/foundation/foundation.js',
                     'bower_components/foundation/js/foundation/foundation.equalizer.js',
+                    'bower_components/foundation/js/foundation/foundation.clearing.js',
                     'src/script.js'
                 ],
                 dest: 'static/script.js'

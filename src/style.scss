@@ -13,6 +13,7 @@ $rem-base: $base-font-size;
 @import "foundation/components/forms";
 @import "foundation/components/block-grid";
 @import "foundation/components/visibility";
+@import "foundation/components/clearing";
 
 $jar-green: #34a587;
 $jar-light-green: #19ffc2;
@@ -181,3 +182,8 @@ section.team {
     }
   }
 }
+
+.carousel {
+  display: none;
+}
+

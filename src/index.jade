@@ -5,6 +5,7 @@ html(lang="en")
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
         link(rel='stylesheet', href='static/style.css')
+        script(src='static/modernizr.js')
     body
         .row(data-equalizer)
             header(data-equalizer-watch)
@@ -14,7 +15,9 @@ html(lang="en")
                         .bottom the jar
                             .line
                     h2 TL;DR - why should I care?
-                    p You give us a great name for the Jar, we give you a [beautiful Jar sweatshirt](link_do_fociaka_z_bluza).
+                    p You give us a great name for the Jar, we give you a
+                        a(href='#')#clearing beautiful Jar sweatshirt.
+
                     p And if the name gets actually chosen, we'll also give you the free conference ticket.
                     p Just fill out the form! There are three sweatshirts and one conference ticket waiting for best proposals until the 1th of March 2015.
                     .spacer
@@ -97,5 +100,3 @@ html(lang="en")
 
         script(src='static/script.js' defer)
 
-//section.jar
-//    img(src='static/jar-full-resolution.jpg')
