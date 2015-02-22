@@ -2928,6 +2928,7 @@ body {
     margin: 2rem 0 0 0; }
 
 header h1 {
+  padding-top: 1rem;
   margin: 0;
   color: #ffffff;
   font-family: 'Museo 500', serif;
