@@ -2770,13 +2770,21 @@ header h1 {
       border: solid;
       border-width: 0 0 0.25rem 0;
       width: 14rem; }
-header .spacer {
-  height: 4rem; }
+@media only screen and (max-width: 40em) {
+  header .spacer {
+    height: 2rem; } }
+@media only screen and (min-width:40.063em) {
+  header .spacer {
+    height: 4rem; } }
 
 section.form {
   background: url('./img/jar-full-resolution.jpg') 50% 50% no-repeat; }
+  @media only screen and (max-width: 40em) {
+    section.form {
+      padding: 3rem 0 2rem 0; } }
   section.form form {
-    position: relative; }
+    position: relative;
+    padding: 0; }
     @media only screen and (min-width:40.063em) {
       section.form form {
         /* top: 50%; */
@@ -2791,7 +2799,8 @@ section.form {
     section.form form button {
       width: 100%;
       background-color: #19ffc2;
-      color: #2b2b2b; }
+      color: #2b2b2b;
+      margin: 0; }
     section.form form button:hover, section.form form button:focus, section.form form .button:hover, section.form form .button:focus {
       background-color: #08523E; }
 
@@ -2802,7 +2811,7 @@ section.form {
   left: 0;
   right: 0;
   margin: -0.5rem;
-  background: rgba(52, 165, 135, 0.9);
+  background: #34a587;
   z-index: 98; }
 
 #thanks {
@@ -2814,9 +2823,10 @@ section.form {
   z-index: 99; }
   #thanks span {
     padding: 0.5rem;
-    line-height: 4rem;
+    line-height: 1.5;
     text-align: center;
-    color: #2b2b2b; }
+    color: #2b2b2b;
+    display: block; }
 
 .hiddenable, #loading, #thanks {
   -webkit-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -2832,6 +2842,9 @@ section.form {
   .hiddenable.hidden, .hidden#loading, .hidden#thanks {
     opacity: 0;
     visibility: hidden; }
+
+section.description {
+  padding-bottom: 2rem; }
 
 section.team .columns, section.team header, section.team section.form, section.team section.description {
   padding-left: 0.57rem;

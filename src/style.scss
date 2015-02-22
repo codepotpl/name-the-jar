@@ -37,8 +37,6 @@ header {
   @extend .columns;
 
   h1 {
-//    padding-top: rem-calc(120);
-//    padding-bottom: rem-calc(90);
     margin: 0;
     color: #ffffff;
     font-family: 'Museo 500', serif;
@@ -60,7 +58,12 @@ header {
   }
 
   .spacer {
-    height: 4rem;
+    @media #{$small-only} {
+      height: 2rem;
+    }
+    @media #{$medium-up} {
+      height: 4rem;
+    }
   }
 }
 
@@ -71,8 +74,13 @@ section.form {
 
   background: url('./img/jar-full-resolution.jpg') 50% 50% no-repeat;
 
+  @media #{$small-only} {
+    padding: 3rem 0 2rem 0;
+  }
+
   form {
     position: relative;
+    padding: 0;
 
     @media #{$medium-up} {
       /* top: 50%; */
@@ -92,6 +100,8 @@ section.form {
       width: 100%;
       background-color: $jar-light-green;
       color: $dark-gray;
+      margin: 0;
+      
     }
     button:hover, button:focus, .button:hover, .button:focus {
       background-color: #08523E;
@@ -99,8 +109,6 @@ section.form {
   }
 
 }
-
-
 
 #loading {
   @extend .hiddenable;
@@ -110,7 +118,7 @@ section.form {
   left: 0;
   right: 0;
   margin: -0.5rem;
-  background: rgba($jar-green, 0.9);
+  background: $jar-green;
   z-index: 98;
 }
 
@@ -124,9 +132,10 @@ section.form {
   z-index: 99;
   span {
     padding: 0.5rem;
-    line-height: 4rem;
+    line-height: 1.5;
     text-align: center;
     color: $dark-gray;
+    display: block;
   }
 }
 
@@ -151,6 +160,8 @@ section.description {
   @extend .small-12;
   @extend .medium-6;
   @extend .columns;
+
+  padding-bottom: 2rem;
 }
 
 section.team {
