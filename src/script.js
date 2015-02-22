@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log('lol');
+    $(document).foundation();
 
     function showLoading(show) {
         if (show) {

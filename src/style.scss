@@ -1,15 +1,18 @@
 @import "Museo300";
 @import "Museo500";
 
+$row-width: rem-calc(1920);
 $body-font-family: 'Museo 300', sans-serif;
 $body-font-weight: 300;
 $body-font-color: white;
-$base-font-size: 18px;
+$base-font-size: 16px;
 $rem-base: $base-font-size;
 
 @import "normalize";
 @import "foundation/components/grid";
 @import "foundation/components/forms";
+@import "foundation/components/block-grid";
+@import "foundation/components/visibility";
 
 $jar-green: #34a587;
 $jar-light-green: #19ffc2;
@@ -17,48 +20,87 @@ $dark-gray: #2b2b2b;
 
 body {
   background-color: $jar-green;
+
+  p {
+    line-height: 1.2;
+    margin: 0.5rem 0 0 0;
+  }
+
+  h2 {
+    margin: 2rem 0 0 0;
+  }
 }
 
 header {
+  @extend .small-12;
+  @extend .medium-6;
+  @extend .columns;
+
   h1 {
-    padding-top: rem-calc(120);
-    padding-bottom: rem-calc(90);
+//    padding-top: rem-calc(120);
+//    padding-bottom: rem-calc(90);
+    margin: 0;
     color: #ffffff;
     font-family: 'Museo 500', serif;
     font-weight: 300;
+    line-height: 1;
     .top {
-      font-size: rem-calc(90);
+      font-size: rem-calc(85);
     }
     .bottom {
-      font-size: rem-calc(78);
+      font-size: rem-calc(74);
       .line {
+        padding-top: 0.5rem;
         $border-width: rem-calc(4);
         border: solid;
         border-width: 0 0 $border-width 0;
-        width: rem-calc(236);
+        width: 14rem;
       }
     }
   }
+
+  .spacer {
+    height: 4rem;
+  }
 }
 
-form {
-  position: relative;
-  input[type='text'], input[type='email'] {
-    font-size: rem-calc(18);
+section.form {
+  @extend .small-12;
+  @extend .medium-6;
+  @extend .columns;
+
+  background: url('./img/jar-full-resolution.jpg') 50% 50% no-repeat;
+
+  form {
+    position: relative;
+
+    @media #{$medium-up} {
+      /* top: 50%; */
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+
+    input[type='text'], input[type='email'] {
+      font-size: rem-calc(18);
+    }
+    input {
+      text-align: center;
+      font-size: rem-calc(18);
+    }
+    button {
+      width: 100%;
+      background-color: $jar-light-green;
+      color: $dark-gray;
+    }
+    button:hover, button:focus, .button:hover, .button:focus {
+      background-color: #08523E;
+    }
   }
-  input {
-    text-align: center;
-    font-size: rem-calc(18);
-  }
-  button {
-    width: 100%;
-    background-color: $jar-light-green;
-    color: $dark-gray;
-  }
-  button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #08523E;
-  }
+
 }
+
+
 
 #loading {
   @extend .hiddenable;
@@ -105,6 +147,26 @@ form {
   }
 }
 
-section.form {
-  padding: 3rem 0 0 0;
+section.description {
+  @extend .small-12;
+  @extend .medium-6;
+  @extend .columns;
+}
+
+section.team {
+  .columns {
+    padding-left: 0.57rem;
+    padding-right: 0.57rem;
+  }
+  li {
+    position: relative;
+    padding: 0;
+
+    span {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      line-height: 1;
+    }
+  }
 }
