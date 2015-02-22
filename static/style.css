@@ -2922,6 +2922,8 @@ body {
   body p {
     line-height: 1.2;
     margin: 0.5rem 0 0 0; }
+  body a {
+    color: #630863; }
   body h2 {
     margin: 2rem 0 0 0; }
 
