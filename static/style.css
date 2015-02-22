@@ -3019,8 +3019,8 @@ section.description {
   padding-bottom: 2rem; }
 
 section.team .columns, section.team header, section.team section.form, section.team section.description {
-  padding-left: 0.57rem;
-  padding-right: 0.57rem; }
+  padding-left: 0.6rem;
+  padding-right: 0.6rem; }
 section.team li {
   position: relative;
   padding: 0; }
@@ -3029,6 +3029,12 @@ section.team li {
     top: 0.5rem;
     left: 0.5rem;
     line-height: 1; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      section.team li span {
+        font-size: 1rem; } }
+    @media only screen and (min-width:64.063em) {
+      section.team li span {
+        font-size: 2rem; } }
 
 .carousel {
   display: none; }

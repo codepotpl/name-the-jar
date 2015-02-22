@@ -106,7 +106,7 @@ section.form {
       background-color: $jar-light-green;
       color: $dark-gray;
       margin: 0;
-      
+
     }
     button:hover, button:focus, .button:hover, .button:focus {
       background-color: #08523E;
@@ -171,8 +171,8 @@ section.description {
 
 section.team {
   .columns {
-    padding-left: 0.57rem;
-    padding-right: 0.57rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
   }
   li {
     position: relative;
@@ -183,6 +183,13 @@ section.team {
       top: 0.5rem;
       left: 0.5rem;
       line-height: 1;
+
+      @media #{$medium-only} {
+        font-size: 1rem;
+      }
+      @media #{$large-up} {
+        font-size: 2rem;
+      }
     }
   }
 }
