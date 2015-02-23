@@ -34,6 +34,23 @@ module.exports = function (grunt) {
             }
         },
 
+        cssmin: {
+            dist: {
+                files: {
+                    'static/style.css': ['static/style.css']
+                }
+            }
+        },
+
+        uglify: {
+            dist: {
+                files: {
+                    'static/modernizr.js': ['static/modernizr.js'],
+                    'static/script.js': ['static/script.js']
+                }
+            }
+        },
+
         watch: {
             sass: {
                 files: 'src/style.scss',
@@ -56,11 +73,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     //grunt.loadNpmTasks('grunt-ember-templates');
     //grunt.loadNpmTasks('grunt-preprocess');
-    //grunt.loadNpmTasks('grunt-contrib-cssmin');
-    //grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     //grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('distribution', ['sass', 'concat', 'emberTemplates', 'preprocess:dist', 'cssmin:dist', 'uglify:dist']);
+    grunt.registerTask('distribution', ['sass', 'concat', 'cssmin', 'uglify:dist']);
 };
