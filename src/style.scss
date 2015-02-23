@@ -5,7 +5,7 @@ $row-width: rem-calc(1920);
 $body-font-family: 'Museo 300', sans-serif;
 $body-font-weight: 300;
 $body-font-color: white;
-$base-font-size: 18px;
+$base-font-size: 16px;
 $rem-base: $base-font-size;
 
 @import "normalize";
@@ -40,6 +40,10 @@ header {
   @extend .small-12;
   @extend .medium-6;
   @extend .columns;
+
+  p {
+    font-size: rem-calc(18);
+  }
 
   h1 {
     padding-top: 1rem;

@@ -431,7 +431,7 @@ html, body {
   box-sizing: border-box; }
 
 html, body {
-  font-size: 18px; }
+  font-size: 16px; }
 
 body {
   background: #fff;
@@ -511,8 +511,8 @@ select {
     margin-right: 0; }
   .row .row {
     width: auto;
-    margin-left: -0.8333333333rem;
-    margin-right: -0.8333333333rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none; }
@@ -532,8 +532,8 @@ select {
         clear: both; }
 
 .column, .columns, header, section.form, section.description {
-  padding-left: 0.8333333333rem;
-  padding-right: 0.8333333333rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
   width: 100%;
   float: left; }
 
@@ -666,8 +666,8 @@ select {
 
   .column, .columns, header, section.form, section.description {
     position: relative;
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
 
   .small-1 {
@@ -775,8 +775,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.small-uncollapse > .column, .row.small-uncollapse > .columns, .row.small-uncollapse > header, .row.small-uncollapse > section.form, .row.small-uncollapse > section.description {
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
  }
 
@@ -903,8 +903,8 @@ select {
 
   .column, .columns, header, section.form, section.description {
     position: relative;
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
 
   .medium-1 {
@@ -1012,8 +1012,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns, .row.medium-uncollapse > header, .row.medium-uncollapse > section.form, .row.medium-uncollapse > section.description {
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
 
   .push-0 {
@@ -1260,8 +1260,8 @@ select {
 
   .column, .columns, header, section.form, section.description {
     position: relative;
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
 
   .large-1 {
@@ -1369,8 +1369,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.large-uncollapse > .column, .row.large-uncollapse > .columns, .row.large-uncollapse > header, .row.large-uncollapse > section.form, .row.large-uncollapse > section.description {
-    padding-left: 0.8333333333rem;
-    padding-right: 0.8333333333rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
 
   .push-0 {
@@ -1501,7 +1501,7 @@ button, .button {
   font-family: 'Museo 300', sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.1111111111rem;
+  margin: 0 0 1.25rem;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -1509,11 +1509,11 @@ button, .button {
   -moz-appearance: none;
   border-radius: 0;
   display: inline-block;
-  padding-top: 0.8888888889rem;
-  padding-right: 1.7777777778rem;
-  padding-bottom: 0.9444444444rem;
-  padding-left: 1.7777777778rem;
-  font-size: 0.8888888889rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
   background-color: #008CBA;
   border-color: #007095;
   color: #FFFFFF;
@@ -1563,33 +1563,33 @@ button, .button {
     button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
       color: #FFFFFF; }
   button.large, .button.large {
-    padding-top: 1rem;
-    padding-right: 2rem;
-    padding-bottom: 1.0555555556rem;
-    padding-left: 2rem;
-    font-size: 1.1111111111rem; }
+    padding-top: 1.125rem;
+    padding-right: 2.25rem;
+    padding-bottom: 1.1875rem;
+    padding-left: 2.25rem;
+    font-size: 1.25rem; }
   button.small, .button.small {
-    padding-top: 0.7777777778rem;
-    padding-right: 1.5555555556rem;
-    padding-bottom: 0.8333333333rem;
-    padding-left: 1.5555555556rem;
-    font-size: 0.7222222222rem; }
+    padding-top: 0.875rem;
+    padding-right: 1.75rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.75rem;
+    font-size: 0.8125rem; }
   button.tiny, .button.tiny {
-    padding-top: 0.5555555556rem;
-    padding-right: 1.1111111111rem;
-    padding-bottom: 0.6111111111rem;
-    padding-left: 1.1111111111rem;
-    font-size: 0.6111111111rem; }
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.6875rem;
+    padding-left: 1.25rem;
+    font-size: 0.6875rem; }
   button.expand, .button.expand {
     padding-right: 0;
     padding-left: 0;
     width: 100%; }
   button.left-align, .button.left-align {
     text-align: left;
-    text-indent: 0.6666666667rem; }
+    text-indent: 0.75rem; }
   button.right-align, .button.right-align {
     text-align: right;
-    padding-right: 0.6666666667rem; }
+    padding-right: 0.75rem; }
   button.radius, .button.radius {
     border-radius: 3px; }
   button.round, .button.round {
@@ -1684,13 +1684,13 @@ button::-moz-focus-inner {
 
 /* Standard Forms */
 form {
-  margin: 0 0 0.8888888889rem; }
+  margin: 0 0 1rem; }
 
 /* Using forms within rows, we need to set some defaults */
 form .row .row {
-  margin: 0 -0.4444444444rem; }
+  margin: 0 -0.5rem; }
   form .row .row .column, form .row .row .columns, form .row .row header, form .row .row section.form, form .row .row section.description {
-    padding: 0 0.4444444444rem; }
+    padding: 0 0.5rem; }
   form .row .row.collapse {
     margin: 0; }
     form .row .row.collapse .column, form .row .row.collapse .columns, form .row .row.collapse header, form .row .row.collapse section.form, form .row .row.collapse section.description {
@@ -1701,11 +1701,11 @@ form .row .row {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
 form .row input.column, form .row input.columns, form .row textarea.column, form .row textarea.columns {
-  padding-left: 0.4444444444rem; }
+  padding-left: 0.5rem; }
 
 /* Label Styles */
 label {
-  font-size: 0.7777777778rem;
+  font-size: 0.875rem;
   color: #4d4d4d;
   cursor: pointer;
   display: block;
@@ -1717,8 +1717,8 @@ label {
     float: none !important;
     text-align: right; }
   label.inline {
-    margin: 0 0 0.8888888889rem 0;
-    padding: 0.5rem 0; }
+    margin: 0 0 1rem 0;
+    padding: 0.5625rem 0; }
   label small {
     text-transform: capitalize;
     color: #676767; }
@@ -1735,9 +1735,9 @@ label {
   border-style: solid;
   border-width: 1px;
   overflow: visible;
-  font-size: 0.7777777778rem;
-  height: 2.0555555556rem;
-  line-height: 2.0555555556rem; }
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  line-height: 2.3125rem; }
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 .postfix.button {
@@ -1809,10 +1809,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
-  font-size: 0.7777777778rem;
-  margin: 0 0 0.8888888889rem 0;
-  padding: 0.4444444444rem;
-  height: 2.0555555556rem;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1903,13 +1903,13 @@ select {
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
-  padding: 0.4444444444rem;
-  font-size: 0.7777777778rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
   font-family: 'Museo 300', sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
-  height: 2.0555555556rem; }
+  height: 2.3125rem; }
   select::-ms-expand {
     display: none; }
   select.radius {
@@ -1925,12 +1925,12 @@ select {
 
 /* Adjust margin for form elements below */
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
-  margin: 0 0 0.8888888889rem 0; }
+  margin: 0 0 1rem 0; }
 
 input[type="checkbox"] + label, input[type="radio"] + label {
   display: inline-block;
-  margin-left: 0.4444444444rem;
-  margin-right: 0.8888888889rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
   margin-bottom: 0;
   vertical-align: baseline; }
 
@@ -1942,22 +1942,22 @@ input[type="file"] {
 /* We add basic fieldset styling */
 fieldset {
   border: 1px solid #DDDDDD;
-  padding: 1.1111111111rem;
-  margin: 1rem 0; }
+  padding: 1.25rem;
+  margin: 1.125rem 0; }
   fieldset legend {
     font-weight: bold;
     background: #FFFFFF;
-    padding: 0 0.1666666667rem;
+    padding: 0 0.1875rem;
     margin: 0;
-    margin-left: -0.1666666667rem; }
+    margin-left: -0.1875rem; }
 
 /* Error Handling */
 [data-abide] .error small.error, [data-abide] .error span.error, [data-abide] span.error, [data-abide] small.error {
   display: block;
-  padding: 0.3333333333rem 0.5rem 0.5rem;
+  padding: 0.375rem 0.5625rem 0.5625rem;
   margin-top: -1px;
-  margin-bottom: 0.8888888889rem;
-  font-size: 0.6666666667rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
   background: #f04124;
@@ -1967,10 +1967,10 @@ fieldset {
 
 span.error, small.error {
   display: block;
-  padding: 0.3333333333rem 0.5rem 0.5rem;
+  padding: 0.375rem 0.5625rem 0.5625rem;
   margin-top: -1px;
-  margin-bottom: 0.8888888889rem;
-  font-size: 0.6666666667rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
   background: #f04124;
@@ -1979,15 +1979,15 @@ span.error, small.error {
 .error input, .error textarea, .error select {
   margin-bottom: 0; }
 .error input[type="checkbox"], .error input[type="radio"] {
-  margin-bottom: 0.8888888889rem; }
+  margin-bottom: 1rem; }
 .error label, .error label.error {
   color: #f04124; }
 .error small.error {
   display: block;
-  padding: 0.3333333333rem 0.5rem 0.5rem;
+  padding: 0.375rem 0.5625rem 0.5625rem;
   margin-top: -1px;
-  margin-bottom: 0.8888888889rem;
-  font-size: 0.6666666667rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
   background: #f04124;
@@ -2013,7 +2013,7 @@ label.error {
 [class*="block-grid-"] {
   display: block;
   padding: 0;
-  margin: 0 -0.5555555556rem; }
+  margin: 0 -0.625rem; }
   [class*="block-grid-"]:before, [class*="block-grid-"]:after {
     content: " ";
     display: table; }
@@ -2023,7 +2023,7 @@ label.error {
     display: block;
     height: auto;
     float: left;
-    padding: 0 0.5555555556rem 1.1111111111rem; }
+    padding: 0 0.625rem 1.25rem; }
 
 @media only screen {
   .small-block-grid-1 > li {
@@ -2927,6 +2927,8 @@ body {
   body h2 {
     margin: 2rem 0 0 0; }
 
+header p {
+  font-size: 1.125rem; }
 header h1 {
   padding-top: 1rem;
   margin: 0;
@@ -2935,13 +2937,13 @@ header h1 {
   font-weight: 300;
   line-height: 1; }
   header h1 .top {
-    font-size: 4.7222222222rem; }
+    font-size: 5.3125rem; }
   header h1 .bottom {
-    font-size: 4.1111111111rem; }
+    font-size: 4.625rem; }
     header h1 .bottom .line {
       padding-top: 0.5rem;
       border: solid;
-      border-width: 0 0 0.2222222222rem 0;
+      border-width: 0 0 0.25rem 0;
       width: 14rem; }
 @media only screen and (max-width: 40em) {
   header .spacer {
@@ -2965,10 +2967,10 @@ section.form {
         -ms-transform: translateY(100%);
         transform: translateY(100%); } }
     section.form form input[type='text'], section.form form input[type='email'] {
-      font-size: 1rem; }
+      font-size: 1.125rem; }
     section.form form input {
       text-align: center;
-      font-size: 1rem; }
+      font-size: 1.125rem; }
     section.form form button {
       width: 100%;
       background-color: #19ffc2;
