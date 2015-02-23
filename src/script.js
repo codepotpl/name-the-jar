@@ -46,6 +46,17 @@ $(document).ready(function () {
         $('#loading').addClass('hidden');
     });
 
+    $('#clearing').on('click', function (event) {
+        var firstElement = $('[data-clearing] li a').first()[0];
+        if (!firstElement) {
+            var html = '<ul data-clearing="" class="clearing-thumbs"><li><a href="./static/img/01.jpg"><img src="./static/img/01.jpg"></a></li><li><a href="./static/img/02.jpg"><img src="./static/img/02.jpg"></a></li><li><a href="./static/img/03.jpg"><img src="./static/img/03.jpg"></a></li><li><a href="./static/img/04.jpg"><img src="./static/img/04.jpg"></a></li><li><a href="./static/img/05.jpg"><img src="./static/img/05.jpg"></a></li></ul>';
+            $('body').append(html);
+            $(document).foundation('clearing', 'reflow');
+        }
+        $('[data-clearing] li a').first().trigger('click');
+    });
+
+
     (function googleAnalytics() {
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
